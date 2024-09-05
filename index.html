@@ -17,32 +17,35 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            padding: 0 10px;
         }
 
         .container {
             text-align: center;
             background-color: #fff;
-            padding: 40px;
+            padding: 30px;
             border-radius: 10px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
         }
 
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 15px;
             color: #4a4a8b;
         }
 
         p {
-            font-size: 1.1rem;
-            margin-bottom: 30px;
+            font-size: 1rem;
+            margin-bottom: 20px;
             color: #666;
         }
 
         .button-container {
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            flex-direction: column;
+            gap: 15px;
         }
 
         .button {
@@ -56,6 +59,7 @@
             text-decoration: none;
             transition: background-color 0.3s ease, transform 0.3s ease;
             display: inline-block;
+            text-align: center;
         }
 
         .button:hover {
@@ -66,15 +70,27 @@
         .button:active {
             background-color: #393973;
         }
+
+        @media (min-width: 768px) {
+            .button-container {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .button {
+                width: auto;
+                min-width: 150px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Frifayer Menu</h1>
-        <p>Pilih Obb Buat Efef burik (Hologram Only nya gaada)</p>
+        <p>Pilih Obb Buat Efef burik</p>
         <div class="button-container">
-            <a href="https://example.com/hologram-only" class="button" target="_blank">Hologram Only</a>
-            <a href="https://www.mediafire.com/file/qo3uktil80eqdqn/main.2019117685.com.dts.freefireth.obb/file" class="button" target="_blank">Hologram + Magic Bullet</a>
+            <a href="https://www.mediafire.com/file/j1s30e4h7wssd2c/Holo_Only.zip/file" class="button" target="_blank">Hologram Only</a>
+            <a href="https://www.mediafire.com/file/2gyubc8y3rw041g/mb%252Bholo.zip/file" class="button" target="_blank">Holo + Magic Bullet</a>
         </div>
     </div>
 </body>
